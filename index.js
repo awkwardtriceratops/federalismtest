@@ -66,6 +66,7 @@ document.addEventListener("drop", function(event) {
         if (curAnswer == 14) {
             document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! Secret message: Tell your teacher your favorite candy."
             document.getElementsByClassName("answercheck")[0].style.background = "yellow"
+            document.getElementsByClassName("answercheck")[0].style.color = "black"
         }
         curAnswer += 1
     } else if (event.target.className == "two" && testAnswer[curAnswer] == 1) {
