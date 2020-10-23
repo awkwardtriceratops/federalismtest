@@ -77,7 +77,7 @@ document.addEventListener("drop", function(event) {
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
         if (curAnswer == 14) {
-            document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! Secret message: Tell your teacher your favorite candy."
+            document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! Secret message: Tell your teacher your favorite color."
             document.getElementsByClassName("answercheck")[0].style.background = "yellow"
             document.getElementsByClassName("answercheck")[0].style.color = "black"
         }
