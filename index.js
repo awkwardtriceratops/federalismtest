@@ -63,11 +63,6 @@ document.addEventListener("drop", function(event) {
         //event.target.innerText=data
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
-        if (curAnswer == 14) {
-            document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! Secret message: Tell your teacher your favorite candy."
-            document.getElementsByClassName("answercheck")[0].style.background = "yellow"
-            document.getElementsByClassName("answercheck")[0].style.color = "black"
-        }
         curAnswer += 1
     } else if (event.target.className == "two" && testAnswer[curAnswer] == 1) {
         event.target.style.color = "white";
@@ -81,6 +76,11 @@ document.addEventListener("drop", function(event) {
         //event.target.innerText=data
         document.getElementsByClassName("spawnzone")[0].appendChild(newElement)
         document.getElementsByClassName("answercheck")[0].innerText = "Right answer! Keep going :)"
+        if (curAnswer == 14) {
+            document.getElementsByClassName("answercheck")[0].innerText = "ALL DONE! Secret message: Tell your teacher your favorite candy."
+            document.getElementsByClassName("answercheck")[0].style.background = "yellow"
+            document.getElementsByClassName("answercheck")[0].style.color = "black"
+        }
         curAnswer += 1
     } else if (event.target.className == "three" && testAnswer[curAnswer] == 2) {
         event.target.style.color = "white";
